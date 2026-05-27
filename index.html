@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personalizing writing feedback for multilingual users</title>
+<meta name="description" content="I&#x27;ve been tuning feedback for non-native speakers and here&#x27;s what actually moves the needle">
+<link rel="canonical" href="https://belikenative.com/5-ways-personalize-writing-feedback/">
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:720px;margin:40px auto;padding:0 20px;line-height:1.7;color:#333;background:#fff}
+h1{font-size:1.8em;line-height:1.3;margin-bottom:8px}
+h2{font-size:1.4em;margin-top:32px}
+h3{font-size:1.2em;margin-top:24px}
+p{margin:16px 0}
+a{color:#2563eb;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:24px}
+li{margin:8px 0}
+.source{color:#666;font-size:14px;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #eee}
+.footer{margin-top:40px;padding-top:20px;border-top:1px solid #eee;color:#666;font-size:14px}
+</style>
+</head>
+<body>
+<article>
+<h1>Personalizing writing feedback for multilingual users</h1>
+<div class="source">Originally published at <a href="https://belikenative.com/5-ways-personalize-writing-feedback/">belikenative.com/5-ways-personalize-writing-feedback</a></div>
+<p>Most grammar tools treat every user the same. A beginner learning English gets the same correction style as someone polishing a business email in their third language. That gap bothered me enough to spend months working on it. Full disclosure: I built <a href="https://belikenative.com">BeLikeNative</a>, a free Chrome extension for real-time grammar and writing help. Take my perspective accordingly.</p>
+<p>Here's what I've found works when you're building feedback systems for multilingual writers.</p>
+<h2>Match feedback to the writer&#x27;s skill level</h2>
+<p>The single biggest improvement I made was tying feedback complexity to proficiency. A beginner who writes "Yesterday I goed to store" doesn't need a lecture on irregular verbs. They need a gentle correction and a reason to keep writing. Something like: "You went to the store with your mom? What did you buy?" corrects the error while keeping the conversation going.</p>
+<p>For intermediate writers, I mix direct and indirect corrections. I'll fix an obvious subject-verb agreement issue outright, but for word choice problems I offer alternatives and let them pick. Advanced users get something different entirely. They don't need me to fix their grammar. They want feedback on tone, idiom usage, and whether their phrasing sounds natural to a native ear.</p>
+<p>I think of it as three layers: form (grammar and mechanics), meaning (does it communicate clearly), and appropriateness (does it fit the context). Beginners mostly need form. Advanced writers mostly need appropriateness. Getting that balance right matters more than any individual correction.</p>
+<h2>Respecting how different languages shape writing</h2>
+<p>Turns out, feedback that works for a Spanish speaker often falls flat for a Japanese speaker. Not because of grammar differences (though those exist), but because of communication style. Japanese writing tends toward indirectness and relies heavily on context. German writing favors directness. If your feedback system only knows one mode, it's going to feel off to half your users.</p>
+<p>I ended up building adjustable settings for formality and tone in <a href="https://belikenative.com">BeLikeNative</a>. A Chinese user might need to toggle between informal and formal registers depending on whether they're writing to a colleague or a superior. A Spanish speaker might need the system to recognize that their longer sentence structures aren't errors, just different conventions.</p>
+<p>Regional variations within the same language matter too. British vs. American English is the obvious one, but Latin American vs. European Spanish catches people off guard. I don't flag these as wrong. I flag them as choices and let the writer decide which standard they're targeting.</p>
+<h2>Mixing feedback formats</h2>
+<p>Text corrections alone get stale. I found that combining inline suggestions with visual markers (color-coded underlining for different error types) and interactive elements (clickable explanations) kept people engaged longer. The trick is layering them in the right order.</p>
+<p>I start with global issues. If the overall structure of a paragraph is confusing, fixing individual comma splices won't help. Once structure is solid, I move to sentence-level patterns. Then mechanics. That top-down approach prevents the problem where a writer fixes twelve small errors but still has an incoherent paragraph.</p>
+<p>Consistency in how errors get marked helps too. I use the same visual system across all error types so users build familiarity. After a few sessions, they start recognizing their own patterns before the tool flags them. That's the goal, really. Make the tool less necessary over time.</p>
+<h2>Picking which issues matter most</h2>
+<p>Early on, I made the mistake of showing every error at once. Writers would see fifteen underlines and just close the tab. So I built a priority system. Content clarity comes first. Structure and readability second. Grammar patterns third. Style refinements last.</p>
+<p>The reasoning is simple: a perfectly grammatical sentence that says nothing useful is worse than a slightly awkward sentence with a clear point. I'd rather a multilingual writer communicate effectively with a few rough edges than produce sterile, "correct" text that lost their voice in the process.</p>
+<p>In practice, I limit feedback to two or three patterns per session. If someone consistently drops articles ("I went to store" instead of "I went to the store"), I focus on that pattern across their whole text rather than scattering attention across unrelated issues. Concentrated practice on one pattern beats shallow exposure to many.</p>
+<h2>Learning from writing history</h2>
+<p>The most useful thing I added to <a href="https://belikenative.com">BeLikeNative</a> was tracking patterns over time. When I can see that a user made the same tense error in four consecutive sessions, I know that's where targeted feedback will have the most impact. When I see that error disappearing, I know it's time to shift focus.</p>
+<p>I track a few things: common errors across sessions, native language influence on English writing, changes in sentence complexity, and how often users actually apply corrections. That last metric surprised me. Some feedback types get ignored consistently, which tells me they're either unclear or not relevant to what the writer cares about. So I adjust.</p>
+<p>Cross-language patterns are particularly interesting. Japanese speakers often struggle with coherence markers that English relies on (explicit transitions, topic sentences). Spanish speakers tend to write longer sentences that work fine in Spanish but lose English readers. Knowing these tendencies lets me front-load the right kind of help.</p>
+<h2>What&#x27;s next</h2>
+<p>I'm still iterating on all of this. The gap between "grammatically correct" and "sounds like a real person wrote it" is where most of the interesting problems live, and I don't think anyone has fully solved it yet.</p>
+<p>I build <a href="https://belikenative.com">BeLikeNative</a>, a free Chrome extension that helps you write better English anywhere on the web. No signup, no data collection.</p>
+<div class="footer">
+<p>Read the original at <a href="https://belikenative.com/5-ways-personalize-writing-feedback/">belikenative.com/5-ways-personalize-writing-feedback</a></p>
+<p><a href="https://belikenative.com">BeLikeNative</a> is a free Chrome extension for real-time grammar checking and writing improvement.</p>
+</div>
+</article>
+</body>
+</html>
